@@ -13,6 +13,9 @@ export default function RootLayout({
 }) {
   return ( 
     <html lang="en" className={cn('bg-white text-slate-900 antialiased', inter.className)}>
+      <head>
+        <title>liamo portfolio</title>
+      </head>
       <body className='min-h-screen bg-slate-50 dark:bg-slate-900 antialised w-full h-full justify-center'>
         <Providers>
           <Navbar></Navbar>
