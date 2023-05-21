@@ -2,6 +2,7 @@ import Image from 'next/image'
 
 import Paragraph from '@/components/ui/Paragraph';
 import LargeHeading from '@/components/ui/LargeHeading';
+import GlitchHeading from '@/components/ui/GlitchHeading';
 
 export default function Home() {
   return (
@@ -15,8 +16,8 @@ export default function Home() {
             <LargeHeading className="py-5 text-left">Creating Clean Code</LargeHeading>
             <LargeHeading className="py-5 text-left">Producing Sleek UI</LargeHeading>
             <LargeHeading className="py-5 text-left">Communicating for Improvement</LargeHeading>
+            
           </div>
-          
         </div>
         
     </main>

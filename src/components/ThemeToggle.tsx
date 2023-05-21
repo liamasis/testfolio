@@ -10,7 +10,7 @@ interface ThemeToggleProps {}
 const ThemeToggle: FC<ThemeToggleProps> = ({}) => {
   const {setTheme } = useTheme()
   
-  return <button onClick={() => setTheme('light')}>fuck</button>
+  return <button onClick={() => setTheme('light')}></button>
 }
 
 export default ThemeToggle

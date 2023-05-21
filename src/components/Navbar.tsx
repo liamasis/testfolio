@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { FC } from 'react'
 import ThemeToggle from './ThemeToggle';
+import GlitchHeading from './ui/GlitchHeading';
 
 interface NavbarProps {
   
@@ -13,8 +14,9 @@ const Navbar: FC<NavbarProps> = ({}) => {
            {/*  <Link href='/' className='text-dark dark:text-white'>
                 liamo portfolio
             </Link> */}
-            <div className="md-hidden">
+            <div className="md-hidden text-white">
                 <ThemeToggle />
+                <GlitchHeading text="PORTFOLIO" />
             </div>
             <div className="hidden md:flex gap-4">
                 <ThemeToggle />
@@ -24,6 +26,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
                 >
                     blog
                 </Link>
+                
                 <Link
                     href = '/contact'
                     className='text-dark dark:text-white'
