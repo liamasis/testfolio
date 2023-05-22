@@ -16,22 +16,23 @@ const Navbar: FC<NavbarProps> = ({}) => {
                 liamo portfolio
             </Link> */}
             <div className="md-hidden text-white">
+                
                 <LargeHeading size={'sm'}>LIAMO</LargeHeading>
-                <GlitchHeading text="PORTFOLIO" />
+
+                    <Link
+                        href = '/'
+                        className='text-dark dark:text-white '
+                    >
+                    <GlitchHeading text="PROJECTS" />
+                </Link>
             </div>
             <div className="hidden md:flex gap-4">
                 <ThemeToggle />
-                <Link
-                    href = '/contact'
-                    className='text-dark dark:text-white'
-                >
-                    
-                    <GlitchHeading text="CONTACT" />
-                </Link>
+                
                 
                 <Link
                     href = '/projects'
-                    className='text-dark dark:text-white'
+                    className='text-dark dark:text-white '
                 >
                    <GlitchHeading text="PROJECTS" />
                 </Link>
