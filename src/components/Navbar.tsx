@@ -22,23 +22,18 @@ const Navbar: FC<NavbarProps> = ({}) => {
             <div className="hidden md:flex gap-4">
                 <ThemeToggle />
                 <Link
-                    href = '/blog'
-                    className='text-dark dark:text-white'
-                >
-                    blog
-                </Link>
-                
-                <Link
                     href = '/contact'
                     className='text-dark dark:text-white'
                 >
-                    contact
+                    
+                    <GlitchHeading text="CONTACT" />
                 </Link>
+                
                 <Link
-                    href = '/works'
+                    href = '/projects'
                     className='text-dark dark:text-white'
                 >
-                    works
+                   <GlitchHeading text="PROJECTS" />
                 </Link>
             </div> 
         </div>

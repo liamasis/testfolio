@@ -50,7 +50,6 @@ interface GlitchyTextProps {
   };
 
   useEffect(() => {
-    interval = setInterval(updateText, 30);
     return () => {
       clearInterval(interval!);
     };
