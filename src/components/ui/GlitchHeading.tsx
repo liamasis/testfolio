@@ -50,6 +50,7 @@ interface GlitchyTextProps {
   };
 
   useEffect(() => {
+    interval = setInterval(updateText, 30);
     return () => {
       clearInterval(interval!);
     };
@@ -61,16 +62,6 @@ interface GlitchyTextProps {
     </h1>
   );
   
-  /* const handleMouseOver = () => {
-    let random  = text.split("").map(letter => letters[Math.floor(Math.random() * 26)]).join('')
-    setDisplayText(random)
-  }
-
-  return (
-    <h1 onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} >
-      {displayText || text}
-    </h1> 
-  );*/
 };
 
 export default GlitchHeading
