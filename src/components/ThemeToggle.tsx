@@ -22,7 +22,7 @@ const ThemeToggle: FC<ThemeToggleProps> = ({}) => {
     {theme === 'dark' ? (
         <Sun className='text-white rotate-0' />
       ) : (
-        <Moon className='text-slate rotate-0' />
+        <Moon className='text-black rotate-0' />
       )}
   </button>
 

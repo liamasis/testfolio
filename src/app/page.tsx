@@ -15,8 +15,10 @@ export default function Home() {
           <LargeHeading className="py-5 text-left">Producing Sleek UI</LargeHeading>
           <LargeHeading className="py-5 text-left">Communicating for <br/>Improvement</LargeHeading>
         </div>
-        <div className="col-start-5 col-span-2 h-full w-full bg-red-700 flex items-start">
-          end
+        <div className="col-start-5 col-span-2 h-full w-full bg-red-700 flex items-start grid grid-rows-3">
+          <div className="col-span-1 h-full w-full flex  "></div>
+          <div className="col-span-1 bg-orange-700 h-full w-full "></div>
+          <div className="col-span-1 h-full w-full "></div>
         </div>
       </div>
         {/* The circle */}
