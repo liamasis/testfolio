@@ -15,7 +15,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
            {/*  <Link href='/' className='text-dark dark:text-white'>
                 liamo portfolio
             </Link> */}
-            <div className="md-hidden text-white">
+            <div className="">
                 
                 <LargeHeading size={'sm'}>LIAMO</LargeHeading>
 
@@ -23,7 +23,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
                         href = '/'
                         className='text-dark dark:text-white '
                     >
-                    <GlitchHeading text="PROJECTS" />
+                    <GlitchHeading text="PORTFOLIO" />
                 </Link>
             </div>
             <div className="hidden md:flex gap-4">
