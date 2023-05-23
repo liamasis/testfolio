@@ -27,7 +27,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
                 </Link>
             </div>
             <div className=" md:flex gap-4">
-                <ThemeToggle />
+                
                 
                 
                 <Link
@@ -36,6 +36,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
                 >
                    <GlitchHeading text="PROJECTS" />
                 </Link>
+                <ThemeToggle />
             </div> 
         </div>
     </div>
