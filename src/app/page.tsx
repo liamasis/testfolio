@@ -12,9 +12,7 @@ export default function Home() {
         
         <div className=" grid grid-rows-10 grid-cols-1 lg:grid-cols-6 z-50 grid-flow-col">
         <div className="col-span-2 col-start-6 row-span-2 row-start-1 text-white"> 
-          <LargeHeading size={'sm'}>
-            Liam O'Brien
-          </LargeHeading>
+          
         </div>
           {/* <div className="invisible lg:visible lg:col-span-1"></div> */}
           <div className="lg:col-start-2 lg:row-start-3 lg:row-span-4 lg:col-span-3 col-span-1">
