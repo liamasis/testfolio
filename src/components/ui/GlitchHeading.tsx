@@ -1,7 +1,7 @@
 "use client";
 
 import { FC, forwardRef, useEffect, useState } from 'react'
-import '../../styles/glitch.css'
+
 import { VariantProps, cva } from 'class-variance-authority'
 import { cn } from '@/lib/utils';
 
