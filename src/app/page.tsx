@@ -25,7 +25,7 @@ export default function Home() {
           </div>
           <div className="col-span-1 h-full w-full flex justify-center items-center ">
           <div className="w-5/6 h-5/6 flex justify-center items-center border-4 border-solid rounded-lg border-slate-800">
-             <Paragraph>My name is Liam O&apos;Brien, a web developer and software engineer. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus vitae vero ab. Amet dolore quidem soluta ut recusandae ipsam laudantium quo alias! Nihil, dolorum magni modi perspiciatis perferendis delectus suscipit, magnam voluptates repellat, ipsa ratione ea laboriosam necessitatibus quidem facere veritatis dolore eos minima vitae quas eligendi? Quae, sequi cupiditate.</Paragraph>
+             <Paragraph>My name is Liam O&apos;Brien, a wasdeb developer and software engineer. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus vitae vero ab. Amet dolore quidem soluta ut recusandae ipsam laudantium quo alias! Nihil, dolorum magni modi perspiciatis perferendis delectus suscipit, magnam voluptates repellat, ipsa ratione ea laboriosam necessitatibus quidem facere veritatis dolore eos minima vitae quas eligendi? Quae, sequi cupiditate.</Paragraph>
             </div>
           </div>
           <div className="col-span-1 h-full w-full flex justify-center items-center">
