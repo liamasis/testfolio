@@ -19,19 +19,19 @@ export default function Home() {
         </div>
         <div className="col-start-5 col-span-2 h-full w-full  flex items-start grid grid-rows-3">
           <div className="col-span-1 h-full w-full flex justify-center items-center ">
-            <div className="h-1/3 w-1/2 flex justify-center items-center border-4 border-solid rounded-lg border-slate-800">
+            <div className="h-1/2 w-4/5 xxl:h-1/3 xxl:w-1/2 flex justify-center items-center p-4 border-4 border-solid rounded-lg border-slate-800">
              <Paragraph>My name is <b>Liam O&apos;Brien</b>, a web developer and software engineer. </Paragraph>
             </div>
           </div>
           <div className="col-span-1 h-full w-full flex justify-center items-center ">
           <div className="w-5/6 h-5/6 flex justify-center items-center border-4 border-solid rounded-lg border-slate-800">
-             <Paragraph>My name is Liam O&apos;Brien, a wasdeb developer and software engineer. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus vitae vero ab. Amet dolore quidem soluta ut recusandae ipsam laudantium quo alias! Nihil, dolorum magni modi perspiciatis perferendis delectus suscipit, magnam voluptates repellat, ipsa ratione ea laboriosam necessitatibus quidem facere veritatis dolore eos minima vitae quas eligendi? Quae, sequi cupiditate.</Paragraph>
+             <Paragraph>My name is Liam O&apcupiditate.</Paragraph>
             </div>
           </div>
           <div className="col-span-1 h-full w-full flex justify-center items-center">
             <Paragraph>Here are my contact details</Paragraph>
-            <Linkedin />
-            <Github />
+            <Linkedin className={'dark:text-white mx-2'}/>
+            <Github className={'dark:text-white'}/>
           </div>
         </div>
       </div>
