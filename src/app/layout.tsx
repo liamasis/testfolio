@@ -23,7 +23,7 @@ export default function RootLayout({
         </Providers>
 
         {/* allow for more height on mobile */}
-        <div className="h-40 md:hidden" />
+       
       </body>
     </html>
   )
