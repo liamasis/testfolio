@@ -7,10 +7,10 @@ import { Github, Linkedin } from 'lucide-react';
 
 export default function Home() {
   return (
-    <main className='h-[calc(100vh-5rem)]  flex items-center justify-center'>
+    <main className='h-[calc(100vh-5rem)] flex items-center justify-center'>
       <div className="bg-orange-300 dark:bg-orange-600 rounded-full inline-flex items-center justify-center aspect-square lg:w-2/6 absolute w-80 opacity-90"></div>
         
-      <div className=" grid grid-cols-6 h-full w-full flex items-center z-50">
+      <div className=" grid grid-cols-1 xl:grid-cols-6 h-full w-full flex items-center z-50">
         <div className="col-start-2 col-span-3">
           <LargeHeading className="py-5 text-left">Constructing Clean Code</LargeHeading>
           <LargeHeading className="py-5 text-left">Creating Sleek UI</LargeHeading>
@@ -24,8 +24,14 @@ export default function Home() {
             </div>
           </div>
           <div className="col-span-1 h-full w-full flex justify-center items-center ">
-          <div className="w-5/6 h-5/6 flex justify-center items-center border-4 border-solid rounded-lg border-slate-800">
-             <Paragraph>My name is Liam O&apcupiditate.</Paragraph>
+          <div className="w-5/6 h-5/6 flex justify-center items-center border-4 border-solid rounded-lg border-slate-800 ">
+             <Paragraph>Two years experience developing applications for B2B Supply Chain Management businesses. Post Grad studies in Artificial Intelligence.
+              
+              <ul>
+                <li> <b>.NET</b>, <b>JavaScript</b>, <b>TypeScript</b>, <b>SQL</b>, <b>VBA</b>, <b>PHP</b>, <b>Python</b> </li>
+                <li> <b>Powershell</b>, <b>Postman</b>, <b>AWS</b> & <b>Azure Services</b> </li>
+                <li> <b>365</b>, <b>Linux</b> & <b>Windows Server</b></li>
+              </ul></Paragraph>
             </div>
           </div>
           <div className="col-span-1 h-full w-full flex justify-center items-center">
