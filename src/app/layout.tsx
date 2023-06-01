@@ -16,10 +16,8 @@ export default function RootLayout({
       <head>
         <title>liamo portfolio</title>
       </head>
-      <body className='min-h-screen thisisatest antialised w-full h-full justify-center'>
+      <body className='min-h-screen bg-slate-50 dark:bg-slate-900 antialised w-full h-full justify-center'>
         <Providers>
-          <div className="gradient1"></div>
-          <div className="gradient2"></div>
           <Navbar></Navbar>
           {children}
         </Providers>
