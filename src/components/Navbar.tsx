@@ -17,7 +17,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
             </Link> */}
             <div className="">
                 
-                <LargeHeading size={'sm'}>LIAMO</LargeHeading>
+                <LargeHeading size={'md'}>LIAMO</LargeHeading>
 
                     <Link
                         href = '/'

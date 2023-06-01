@@ -11,10 +11,10 @@ export default function Home() {
       <div className="bg-orange-300 dark:bg-orange-600 rounded-full inline-flex items-center justify-center aspect-square lg:w-2/6 absolute w-80 opacity-90"></div>
         
       <div className=" grid grid-cols-1 xl:grid-cols-6 h-full w-full flex items-center z-50">
-        <div className="col-start-1 xl:col-start-2 col-span-3">
-          <LargeHeading className="py-5 xl:text-left">Constructing Clean Code</LargeHeading>
-          <LargeHeading className="py-5 xl:text-left">Creating Sleek UI</LargeHeading>
-          <LargeHeading className="py-5 xl:text-left">Communicating for <br/>Improvement</LargeHeading>
+        <div className="col-start-1 xl:col-start-2 text-center col-span-3">
+          <LargeHeading size={'lg'} className="py-5 ">Constructing Clean Code</LargeHeading>
+          <LargeHeading size={'lg'} className="py-5">Creating Sleek UI</LargeHeading>
+          <LargeHeading size={'lg'} className="py-5">Communicating for <br/>Improvement</LargeHeading>
 
         </div>
         <div className="col-start-1 col-span-1 xl:col-start-5 xl:col-span-2 h-full w-full flex-grow items-start grid grid-rows-3 xl:grid-rows-3">
@@ -25,12 +25,12 @@ export default function Home() {
           </div>
           <div className="col-span-3 xl:col-span-1 h-full w-full flex justify-center items-center ">
           <div className="w-5/6 min-h-5/6 flex justify-center items-center border-4 border-solid rounded-lg border-slate-800 p-4">
-             <Paragraph>Two years experience developing applications for B2B Supply Chain Management businesses with Post Graduate Studies in Artificial Intelligence.
+             <Paragraph>I have two years experience developing applications for B2B Supply Chain Management businesses with Post Graduate Studies in Artificial Intelligence.
               
               <ul>
-                <li> <b>.NET</b>, <b>JavaScript</b>, <b>TypeScript</b>, <b>SQL</b>, <b>VBA</b>, <b>PHP</b>, <b>Python</b> </li>
-                <li> <b>Powershell</b>, <b>Postman</b>, <b>AWS</b> & <b>Azure Services</b> </li>
-                <li> <b>365</b>, <b>Linux</b> & <b>Windows Server</b></li>
+                <li> <b>.NET</b>, <b>JavaScript</b>, <b>Python</b> </li>
+                <li> <b>Postman</b>, <b>AWS</b> & <b>Azure</b> </li>
+                <li> <b>React</b> & <b>Express</b></li>
               </ul></Paragraph>
             </div>
           </div>
