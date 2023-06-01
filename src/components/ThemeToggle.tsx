@@ -11,18 +11,18 @@ const ThemeToggle: FC<ThemeToggleProps> = ({}) => {
   const { theme, setTheme } = useTheme()
   
   const toggleTheme = () => {
-    if (theme === 'dark') {
-      setTheme('light');
-    } else {
+    if (theme === 'light') {
       setTheme('dark');
+    } else {
+      setTheme('light');
     }
   };
 
   return <button onClick={toggleTheme}>
-    {theme === 'dark' ? (
-        <Sun className='text-white rotate-0' />
-      ) : (
+    {theme === 'light' ? (
         <Moon className='text-black rotate-0' />
+      ) : (
+        <Sun className='text-white rotate-0' />
       )}
   </button>
 
