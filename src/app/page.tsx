@@ -34,7 +34,8 @@ export default function Home() {
               </ul></Paragraph>
             </div>
           </div>
-          <div className="col-span-1 h-full w-full flex justify-center items-center">
+          <div className="col-span-3 xl:col-span-1  row-span-1 h-full w-full flex justify-center items-center">
+            
             <Paragraph>Here are my contact details</Paragraph>
             <a href="https://www.linkedin.com/in/liam-o-brien-/" target="_blank" rel="noopener noreferrer">
               <Linkedin className={'dark:text-white mx-2'}/>
