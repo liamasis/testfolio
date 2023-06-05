@@ -2,13 +2,12 @@ import Image from 'next/image'
 
 import Paragraph from '@/components/ui/Paragraph';
 import LargeHeading from '@/components/ui/LargeHeading';
-import GlitchHeading from '@/components/ui/GlitchHeading';
 import { Github, Linkedin } from 'lucide-react';
 
 export default function Home() {
   return (
-    <main className='min-h-[calc(100vh-5rem)] flex items-center justify-center'>
-      <div className="bg-orange-300 dark:bg-orange-600 rounded-full inline-flex items-center justify-center aspect-square lg:w-2/6 absolute w-80 opacity-90"></div>
+    <main className='min-h-[calc(100vh-5rem)] flex items-start xl:items-center justify-center'>
+      <div className="bg-orange-300 dark:bg-orange-600 rounded-full inline-flex aspect-square lg:w-2/6 absolute w-80 opacity-90"></div>
         
       <div className=" grid grid-cols-1 xl:grid-cols-6 h-full w-full flex items-center z-50">
         <div className="col-start-1 xl:col-start-2 text-center col-span-3">
