@@ -2,9 +2,14 @@ import Navbar from '@/components/Navbar';
 import Providers from '@/components/Providers';
 import { cn } from '@/lib/utils';
 import '@/styles/globals.css'
-import { Inter } from 'next/font/google'
+import { Inter, Roboto, JetBrains_Mono } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
+
+const jetbrains = JetBrains_Mono({
+  subsets:['latin'],
+  weight: ['400', '700']
+})
 
 export default function RootLayout({
   children,
