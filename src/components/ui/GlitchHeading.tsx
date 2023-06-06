@@ -8,7 +8,7 @@ import useWindowSize from '@/lib/useWindowSize';
 /* 
 TODO:
   - If it is mobile or smaller then XL, remove the glitchy heading... made custom hook. DONE.
-  
+
 */
 interface GlitchyTextProps {
     text: string;
@@ -19,7 +19,7 @@ interface GlitchyTextProps {
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     let interval: NodeJS.Timeout | null = null;
     let iteration = 0;
-
+    const isBrowser = () => typeof window !== 'undefined'; 
     
     
     const updateText = () => {
@@ -55,25 +55,34 @@ interface GlitchyTextProps {
     iteration = 0;
   };
 
-  const windowSize = useWindowSize(); // Custom hook to get window size
-  const isXlScreen = windowSize.width >= 1280; // Adjust the width threshold as per your needs
-
   useEffect(() => {
-    if (!isXlScreen) {
-      setDisplayText(text); // If screen size is not xl, display the text immediately
+    if (typeof window !== 'undefined') {
+      // Check if window is defined (client-side rendering)
+      window.addEventListener('resize', handleWindowSizeChange);
     }
-  }, [isXlScreen, text]);
-  
-  useEffect(() => {
+
     return () => {
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('resize', handleWindowSizeChange);
+      }
       clearInterval(interval!);
     };
-  }, []); 
+  }, []);
 
-  if (!isXlScreen) {
-    return <h1>{text}</h1>; // If screen size is not xl, return plain h1 without glitch effect
+  const handleWindowSizeChange = () => {
+    // Handle window size change logic here
+    const isXlScreen = window.innerWidth >= 1280; // Adjust the width threshold as per your needs
+
+    if (isXlScreen) {
+      clearInterval(interval!);
+      setDisplayText(text);
+    }
+  };
+
+  if (typeof window !== 'undefined' && window.innerWidth >= 1280) {
+    // Render plain h1 for xl screen or larger
+    return <h1>{text}</h1>;
   }
-
   return (
     <h1 onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
       {displayText || text}
