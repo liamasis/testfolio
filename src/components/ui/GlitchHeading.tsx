@@ -76,7 +76,7 @@ interface GlitchyTextProps {
     }
   };
 
-  if (typeof window !== 'undefined' && window.innerWidth >= 1280) {
+  if (typeof window !== 'undefined' && window.innerWidth <= 1280) {
     // Render plain h1 for xl screen or larger
     return <h1>{text}</h1>;
   }
