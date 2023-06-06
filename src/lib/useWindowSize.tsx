@@ -1,3 +1,4 @@
+'use-client' 
 import { useEffect, useState } from 'react';
 
 const useWindowSize = () => {
@@ -12,7 +13,8 @@ const useWindowSize = () => {
       height: window.innerHeight
     });
   };
-
+  
+  
   useEffect(() => {
     window.addEventListener('resize', handleResize);
 
