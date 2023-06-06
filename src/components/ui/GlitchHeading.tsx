@@ -2,9 +2,6 @@
 
 import { FC, forwardRef, useEffect, useState } from 'react'
 
-import { VariantProps, cva } from 'class-variance-authority'
-import { cn } from '@/lib/utils';
-import useWindowSize from '@/lib/useWindowSize';
 /* 
 TODO:
   - If it is mobile or smaller then XL, remove the glitchy heading... made custom hook. DONE.
