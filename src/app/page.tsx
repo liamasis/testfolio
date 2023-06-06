@@ -6,20 +6,20 @@ import { Github, Linkedin } from 'lucide-react';
 
 export default function Home() {
   return (
-    <main className='min-h-[calc(100vh-5rem)] flex items-start xl:items-center justify-center'>
-      <div className="bg-orange-300 dark:bg-orange-600 rounded-full inline-flex aspect-square lg:w-2/6 absolute w-80 opacity-90"></div>
+    <main className='h-[calc(100vh-5rem)] flex items-start xl:items-center justify-center'>
+      <div className="bg-orange-300 mt-10 xl:mt-0 dark:bg-orange-600 rounded-full inline-flex aspect-square lg:w-2/6 absolute w-80 opacity-90"></div>
         
-      <div className=" grid grid-cols-1 xl:grid-cols-6 h-full w-full flex items-center z-50">
+      <div className="grid grid-cols-1 xl:grid-cols-6 h-full flex items-center z-50">
         <div className="col-start-1 xl:col-start-2 text-center col-span-3">
-          <LargeHeading size={'lg'} className="py-5 ">Constructing Clean Code</LargeHeading>
+          <LargeHeading size={'lg'} className="py-5">Constructing Clean Code</LargeHeading>
           <LargeHeading size={'lg'} className="py-5">Creating Sleek UI</LargeHeading>
           <LargeHeading size={'lg'} className="py-5">Communicating for <br/>Improvement</LargeHeading>
 
         </div>
-        <div className="col-start-1 col-span-1 xl:col-start-5 xl:col-span-2 h-full w-full flex-grow items-start grid grid-rows-3 xl:grid-rows-3">
+        <div className="col-start-1 col-span-1 xl:col-start-5 xl:col-span-2 h-full w-full flex-grow items-start grid grid-rows-3 ">
           <div className="col-span-3 xl:col-span-1  h-full w-full flex justify-center items-center ">
             <div className="min-h-1/2 w-4/5 flex justify-center items-center p-4 border-4 border-solid rounded-lg border-slate-800">
-             <Paragraph>My name is <b>Liam O&apos;Brien</b>, a web developer and software engineer. </Paragraph>
+             <Paragraph>My name is <b>Liam O&apos;Brien</b>, a web developer and software engineer.  </Paragraph>
             </div>
           </div>
           <div className="col-span-3 xl:col-span-1 h-full w-full flex justify-center items-center ">

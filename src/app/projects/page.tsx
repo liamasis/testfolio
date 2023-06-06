@@ -25,7 +25,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <main className=' h-[calc(100vh-5rem)] flex items-center justify-center'>
+    <main className=' xl:h-[calc(100vh-5rem)] flex items-center justify-center'>
         {/* The circle */}
         <div className={`rounded-full inline-flex items-center justify-center aspect-square lg:w-2/6 absolute w-80 opacity-90 transition-colors duration-500 ${isLoading ? 'bg-orange-300 dark:bg-orange-600' : 'bg-green-300 dark:bg-green-600'}`}></div>
         <div className="h-full w-full grid grid-cols-1 xl:grid-cols-2 grid-rows-2 z-50">

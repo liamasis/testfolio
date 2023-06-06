@@ -4,8 +4,12 @@ import { FC, forwardRef, useEffect, useState } from 'react'
 
 import { VariantProps, cva } from 'class-variance-authority'
 import { cn } from '@/lib/utils';
-
-
+import useWindowSize from '@/lib/useWindowSize';
+/* 
+TODO:
+  - If it is mobile or smaller then XL, remove the glitchy heading... made custom hook. DONE.
+  
+*/
 interface GlitchyTextProps {
     text: string;
   }
@@ -16,6 +20,8 @@ interface GlitchyTextProps {
     let interval: NodeJS.Timeout | null = null;
     let iteration = 0;
 
+    
+    
     const updateText = () => {
     setDisplayText(prevText => {
       return prevText
@@ -36,7 +42,7 @@ interface GlitchyTextProps {
       clearInterval(interval!);
     }
   };
-
+  
   const handleMouseOver = () => {
     clearInterval(interval!);
     setDisplayText(text);
@@ -49,11 +55,24 @@ interface GlitchyTextProps {
     iteration = 0;
   };
 
+  const windowSize = useWindowSize(); // Custom hook to get window size
+  const isXlScreen = windowSize.width >= 1280; // Adjust the width threshold as per your needs
+
+  useEffect(() => {
+    if (!isXlScreen) {
+      setDisplayText(text); // If screen size is not xl, display the text immediately
+    }
+  }, [isXlScreen, text]);
+  
   useEffect(() => {
     return () => {
       clearInterval(interval!);
     };
   }, []); 
+
+  if (!isXlScreen) {
+    return <h1>{text}</h1>; // If screen size is not xl, return plain h1 without glitch effect
+  }
 
   return (
     <h1 onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
