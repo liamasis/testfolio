@@ -30,7 +30,7 @@ export default function Projects() {
         <div className={`rounded-full inline-flex items-center justify-center aspect-square lg:w-2/6 absolute w-80 opacity-90 transition-colors duration-500 ${isLoading ? 'bg-orange-300 dark:bg-orange-600' : 'bg-green-300 dark:bg-green-600'}`}></div>
         <div className="h-full w-full grid grid-cols-1 xl:grid-cols-2 grid-rows-2 z-50">
           
-          <FadeSection heading={'This is my heading'} paragraph={'woah what the fuck it worked first try?'} delayTime={900} />
+          <FadeSection heading={'Portfolio'} paragraph={`Made in Typescript, developed with Figma, NextJS and Tailwind, and AWS Amplify for CI/CD.`} delayTime={900} />
           <FadeSection heading={'This is my heading'} paragraph={'woah what the fuck it worked first try?'} delayTime={1000} />
           <FadeSection heading={'This is my heading'} paragraph={'woah what the fuck it worked first try?'} delayTime={950} />
           <FadeSection heading={'This is my heading'} paragraph={'woah what the fuck it worked first try?'} delayTime={1050} />

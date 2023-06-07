@@ -1,12 +1,12 @@
 import Paragraph from '@/components/ui/Paragraph';
 import LargeHeading from '@/components/ui/LargeHeading';
-import { Github, Linkedin } from 'lucide-react';
+import { Github, Instagram, Linkedin } from 'lucide-react';
 
 
 export default function Home() {
   return (
     <main className='h-[calc(100vh-5rem)] flex items-start xl:items-center justify-center'>
-      <div className="bg-orange-300 mt-10 xl:mt-0 dark:bg-orange-600 rounded-full inline-flex aspect-square lg:w-2/6 absolute w-80 opacity-90"></div>
+      <div className="bg-orange-300 mt-2 xl:mt-0 dark:bg-orange-600 rounded-full inline-flex aspect-square lg:w-2/6 absolute w-80 opacity-90"></div>
         
       <div className="grid grid-cols-1 xl:grid-cols-6 h-full flex items-center z-50">
         <div className="col-start-1 xl:col-start-2 text-center col-span-3">
@@ -29,7 +29,7 @@ export default function Home() {
             </div>
           </div>
           <div className="col-span-3 xl:col-span-1 h-full w-full flex justify-center items-center ">
-          <div className="w-5/6 min-h-5/6 flex-col justify-center items-center border-4 border-solid rounded-lg dark:border-slate-400 border-slate-800">
+          <div className="w-5/6 min-h-5/6 flex-col justify-start items-start border-4 border-solid rounded-lg dark:border-slate-400 border-slate-800">
             <div className="h-6 border-b-4 dark:border-slate-400 border-slate-800 flex flex-row-reverse gap-1 items-center justify-items-end">
               <div className="pr-1 flex gap-1">
                 <div className="rounded-full bg-green-400 h-4 w-4 border-2 dark:border-slate-400 border-slate-800"></div>
@@ -37,18 +37,31 @@ export default function Home() {
                 <div className="rounded-full bg-red-400 h-4 w-4 border-2 dark:border-slate-400 border-slate-800"></div>
               </div>
             </div>
-            <Paragraph className='p-4'>I have two years experience developing applications for B2B Supply Chain Management businesses with Post Graduate Studies in Artificial Intelligence.
-            
-            <ul>
-              <li> <b>.NET</b>, <b>JavaScript</b>, <b>Python</b> </li>
-              <li> <b>Postman</b>, <b>AWS</b> & <b>Azure</b> </li>
-              <li> <b>React</b> & <b>Express</b></li>
-            </ul></Paragraph>
-          </div>
+            <div className="flex flex-col p-4">
+              <Paragraph className='text-left'>Two years experience developing applications in the Supply Chain & Agricultural Technology
+              Industries with a Post Graduate Diploma in Artificial Intelligence.
+              </Paragraph>
+              
+              <ul className='flex flex-col '>
+                  <li> <b>PHP</b> | <b>JavaScript</b> | <b>TypeScript</b> | <b>Python</b> </li>
+                  <li> <b>React</b> | <b>Express</b> | <b>React</b> | <b>Docker</b> | <b>API</b></li>
+                  <li> <b>Postman</b> | <b>AWS</b> | <b>Azure</b> | <b>Windows Server</b></li>
+                  
+                </ul>
+              </div>
+            </div>
           </div>
           <div className="col-span-3 xl:col-span-1 row-span-1 h-full w-full flex justify-center items-center xl:items-start">
-            <div className="h-1/3 w-2/3 flex-col items-center justify-end">
-              <div className="flex flex-row-reverse items-center  ">
+            <div className="h-1/3 w-4/5 flex-col items-center justify-end ">
+              
+              <div className="flex items-center  ">
+                <a href="https://www.linkedin.com/in/liam-o-brien-/" target="_blank" rel="noopener noreferrer" >
+                  <Instagram className={'text-black dark:text-white mx-2'}/>
+                </a>
+                <Paragraph className='flex m-2 justify-center items-center'><b className='text-black dark:text-white'>Instagram</b></Paragraph>
+              </div>
+
+              <div className="flex items-center  ">
                 <a href="https://www.linkedin.com/in/liam-o-brien-/" target="_blank" rel="noopener noreferrer" >
                   <Linkedin className={'text-black dark:text-white mx-2'}/>
                 </a>
@@ -56,15 +69,12 @@ export default function Home() {
               </div>
               
               
-              <div className="flex flex-row-reverse items-center">
+              <div className="flex items-center">
                 <a href="https://www.linkedin.com/in/liam-o-brien-/" target="_blank" rel="noopener noreferrer" >
                   <Github className={'text-black dark:text-white m-2'}/>
                 </a>
                 <Paragraph className='flex m-2 justify-center items-center'><b  className='text-black  dark:text-white'>Github</b></Paragraph>
               </div>
-              
-                
-              
             </div>
           </div>
         </div>
