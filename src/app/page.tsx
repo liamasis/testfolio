@@ -17,37 +17,37 @@ export default function Home() {
         </div>
         <div className="col-start-1 col-span-1 xl:col-start-5 xl:col-span-2 h-full w-full flex-grow items-start grid grid-rows-3 ">
           <div className="col-span-3 xl:col-span-1 h-full w-full flex justify-center items-center ">
-            <div className="min-h-1/2 w-4/5 flex-col justify-center items-center border-4 border-solid rounded-lg dark:border-slate-400 border-slate-800">
-              <div className="h-6 border-b-4 dark:border-slate-400 border-slate-800 flex flex-row-reverse gap-1 items-center justify-items-end">
+            <div className="min-h-1/2 w-4/5 flex-col justify-center items-center border-4 border-solid rounded-lg dark:border-white-400 border-slate-800">
+              <div className="h-6 border-b-4 dark:border-white-400 border-slate-800 flex flex-row-reverse gap-1 items-center justify-items-end">
                 <div className="pr-1 flex gap-1">
-                  <div className="rounded-full bg-green-400 h-4 w-4 border-2 dark:border-slate-400 border-slate-800"></div>
-                  <div className="rounded-full bg-orange-400 h-4 w-4 border-2 dark:border-slate-400 border-slate-800"></div>
-                  <div className="rounded-full bg-red-400 h-4 w-4 border-2 dark:border-slate-400 border-slate-800"></div>
+                  <div className="rounded-full bg-green-400 h-4 w-4 border-2 dark:border-slate-600 border-slate-800"></div>
+                  <div className="rounded-full bg-orange-400 h-4 w-4 border-2 dark:border-slate-600 border-slate-800"></div>
+                  <div className="rounded-full bg-red-400 h-4 w-4 border-2 dark:border-slate-600 border-slate-800"></div>
                 </div>
               </div>
              <Paragraph className='p-4'>My name is <b className='text-black  dark:text-white'>Liam O&apos;Brien</b>, a web developer and software engineer.  </Paragraph>
             </div>
           </div>
           <div className="col-span-3 xl:col-span-1 h-full w-full flex justify-center items-center ">
-          <div className="w-5/6 min-h-5/6 flex-col justify-start items-start border-4 border-solid rounded-lg dark:border-slate-400 border-slate-800">
-            <div className="h-6 border-b-4 dark:border-slate-400 border-slate-800 flex flex-row-reverse gap-1 items-center justify-items-end">
+          <div className="w-5/6 min-h-5/6 flex-col justify-start items-start border-4 border-solid rounded-lg dark:border-white-400 border-slate-800">
+            <div className="h-6 border-b-4 dark:border-white-400 border-slate-800 flex flex-row-reverse gap-1 items-center justify-items-end">
               <div className="pr-1 flex gap-1">
-                <div className="rounded-full bg-green-400 h-4 w-4 border-2 dark:border-slate-400 border-slate-800"></div>
-                <div className="rounded-full bg-orange-400 h-4 w-4 border-2 dark:border-slate-400 border-slate-800"></div>
-                <div className="rounded-full bg-red-400 h-4 w-4 border-2 dark:border-slate-400 border-slate-800"></div>
+                <div className="rounded-full bg-green-400 h-4 w-4 border-2 dark:border-slate-600 border-slate-800"></div>
+                <div className="rounded-full bg-orange-400 h-4 w-4 border-2 dark:border-slate-600 border-slate-800"></div>
+                <div className="rounded-full bg-red-400 h-4 w-4 border-2 dark:border-slate-600 border-slate-800"></div>
               </div>
             </div>
             <div className="flex flex-col p-4">
               <Paragraph className='text-left'>Two years experience developing applications in the Supply Chain & Agricultural Technology
               Industries with a Post Graduate Diploma in Artificial Intelligence.
               </Paragraph>
-              
-              <ul className='flex flex-col '>
+              <Paragraph className='text-left'>
+                <ul className='flex flex-col dark:border-slate-600 '>
                   <li> <b>PHP</b> | <b>JavaScript</b> | <b>TypeScript</b> | <b>Python</b> </li>
                   <li> <b>React</b> | <b>Express</b> | <b>React</b> | <b>Docker</b> | <b>API</b></li>
                   <li> <b>Postman</b> | <b>AWS</b> | <b>Azure</b> | <b>Windows Server</b></li>
-                  
                 </ul>
+              </Paragraph>
               </div>
             </div>
           </div>
