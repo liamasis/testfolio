@@ -5,7 +5,7 @@ import { Github, Instagram, Linkedin } from 'lucide-react';
 
 export default function Home() {
   return (
-    <main className='h-[calc(100vh-5rem)] flex items-start xl:items-center justify-center'>
+    <main className='h-full flex items-start xl:items-center justify-center'>
       <div className="bg-orange-300 mt-2 xl:mt-0 dark:bg-orange-600 rounded-full inline-flex aspect-square lg:w-2/6 absolute w-80 opacity-90"></div>
         
       <div className="grid grid-cols-1 xl:grid-cols-6 h-full flex items-center z-50">

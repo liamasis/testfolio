@@ -21,13 +21,11 @@ export default function RootLayout({
       <head>
         <title>liamo portfolio</title>
       </head>
-      <body className='min-h-screen bg-slate-50 dark:bg-slate-900 antialised w-full h-full justify-center'>
+      <body className='bg-slate-50 dark:bg-slate-900 antialised w-full xl:h-full justify-center'>
         <Providers>
           <Navbar></Navbar>
           {children}
         </Providers>
-
-        {/* allow for more height on mobile */}
        
       </body>
     </html>
