@@ -55,7 +55,7 @@ export default function Home() {
             <div className="h-1/3 w-4/5 flex-col items-center justify-end ">
               
               <div className="flex items-center  ">
-                <a href="https://www.linkedin.com/in/liam-o-brien-/" target="_blank" rel="noopener noreferrer" >
+                <a href="https://www.instagram.com/binarythought.wav/" target="_blank" rel="noopener noreferrer" >
                   <Instagram className={'text-black dark:text-white mx-2'}/>
                 </a>
                 <Paragraph className='flex m-2 justify-center items-center'><b className='text-black dark:text-white'>Instagram</b></Paragraph>
@@ -70,7 +70,7 @@ export default function Home() {
               
               
               <div className="flex items-center">
-                <a href="https://www.linkedin.com/in/liam-o-brien-/" target="_blank" rel="noopener noreferrer" >
+                <a href="https://github.com/liamasis" target="_blank" rel="noopener noreferrer" >
                   <Github className={'text-black dark:text-white m-2'}/>
                 </a>
                 <Paragraph className='flex m-2 justify-center items-center'><b  className='text-black  dark:text-white'>Github</b></Paragraph>
