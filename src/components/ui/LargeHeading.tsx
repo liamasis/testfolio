@@ -4,12 +4,12 @@ import { cn } from '@/lib/utils';
 
 
 const headingVariants = cva(
-  'text-black dark:text-white text-center  font-extrabold leading-tight tracking-tighter',
+  'text-black dark:text-white text-center font-extrabold leading-tight tracking-tighter',
   {
     variants: {
       size: {
         default: 'text-4xl md:text-5xl lg:text-6xl',
-        lg: 'text-4xl md:text-5xl lg:text-6xl xxl:text-left',
+        lg: 'text-2xl md:text-5xl lg:text-5xl xl:text-6xl xl:text-left',
         md: 'text-4xl md:text-4xl lg:text-4xl',
         sm: 'text-lg md:text-xl lg:text-2xl',
       },
