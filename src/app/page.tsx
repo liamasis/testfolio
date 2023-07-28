@@ -5,7 +5,7 @@ import useEffect from 'react';
 import { useTheme } from 'next-themes';
 
 export default function Home() {
-  /* THIS IS A TEST FOR PUSHING TO REMOTE BRANCH THAT ISN't MAIN WITHOUT STARTINg A PULL REQUEST FOR MAIN */
+  /* attempt number 2*/
 
   return (
     <main className='h-full flex xl:h-[calc(100vh-5rem)] flex xl:items-center items-start justify-center'>
