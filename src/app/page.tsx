@@ -1,9 +1,12 @@
 import Paragraph from '@/components/ui/Paragraph';
 import LargeHeading from '@/components/ui/LargeHeading';
 import { Github, Instagram, Link, Linkedin } from 'lucide-react';
-
+import useEffect from 'react'; 
+import { useTheme } from 'next-themes';
 
 export default function Home() {
+  /* THIS IS A TEST FOR PUSHING TO REMOTE BRANCH THAT ISN't MAIN WITHOUT STARTINg A PULL REQUEST FOR MAIN */
+
   return (
     <main className='h-full flex xl:h-[calc(100vh-5rem)] flex xl:items-center items-start justify-center'>
       <div className="bg-orange-300 mt-2 xl:mt-0 dark:bg-orange-600 rounded-full inline-flex aspect-square md:w-1/8 lg:w-2/6 xl:w-1/4 absolute w-72 opacity-90"></div>
@@ -41,13 +44,6 @@ export default function Home() {
               <Paragraph className='text-left'>Looking for a developer position in Europe, with two years experience developing & supporting applications in the Supply Chain & Ag-tech
               industries with a Post Graduate Diploma of Computer Science from the University of Melbourne, Australia.
               </Paragraph>
-{/*               <Paragraph className='text-left'>
-                <ul className='flex flex-col dark:border-slate-600 '>
-                  <li> <b>PHP</b> | <b>JavaScript</b> | <b>TypeScript</b> | <b>Python</b> </li>
-                  <li> <b>React</b> | <b>Express</b> | <b>React</b> | <b>Docker</b> | <b>API</b></li>
-                  <li> <b>Postman</b> | <b>AWS</b> | <b>Azure</b> | <b>Windows Server</b></li>
-                </ul>
-              </Paragraph> */}
               </div>
             </div>
           </div>
@@ -67,7 +63,6 @@ export default function Home() {
                 </a>
                 <Paragraph className='flex m-2 justify-center items-center'><b className='text-black dark:text-white'>Linkedin</b></Paragraph>
               </div>
-              
               
               <div className="flex items-center lg:justify-center">
                 <a href="https://github.com/liamasis" target="_blank" rel="noopener noreferrer" >
