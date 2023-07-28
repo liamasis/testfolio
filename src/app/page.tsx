@@ -5,7 +5,7 @@ import useEffect from 'react';
 import { useTheme } from 'next-themes';
 
 export default function Home() {
-  /* attempt number 3*/
+  /* attempt number 4*/
 
   return (
     <main className='h-full flex xl:h-[calc(100vh-5rem)] flex xl:items-center items-start justify-center'>
