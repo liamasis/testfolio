@@ -2,11 +2,11 @@ import Navbar from '@/components/Navbar';
 import Providers from '@/components/Providers';
 import { cn } from '@/lib/utils';
 import '@/styles/globals.css'
-import { Inter, Roboto, JetBrains_Mono } from 'next/font/google'
+import { Inter, Roboto, Averia_Serif_Libre } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const jetbrains = JetBrains_Mono({
+const averia = Averia_Serif_Libre({
   subsets:['latin'],
   weight: ['400', '700']
 })
@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return ( 
-    <html lang="en" className={cn('bg-white text-slate-900 antialiased', inter.className)}>
+    <html lang="en" className={cn('bg-white text-slate-900 antialiased', averia.className)}>
       <head>
         <title>liamo portfolio</title>
       </head>
