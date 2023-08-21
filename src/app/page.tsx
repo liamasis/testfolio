@@ -2,10 +2,8 @@ import Paragraph from '@/components/ui/Paragraph';
 import LargeHeading from '@/components/ui/LargeHeading';
 import { Github, Instagram, Link, Linkedin } from 'lucide-react';
 import useEffect from 'react'; 
-import { useTheme } from 'next-themes';
 
 export default function Home() {
-  /* attempt number 4*/
 
   return (
     <main className='h-full flex xl:h-[calc(100vh-5rem)] flex xl:items-center items-start justify-center'>
