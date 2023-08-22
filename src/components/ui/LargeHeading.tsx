@@ -1,7 +1,9 @@
 import { FC, forwardRef } from 'react'
 import { VariantProps, cva } from 'class-variance-authority'
 import { cn } from '@/lib/utils';
+import { Inter, Roboto, Averia_Serif_Libre } from 'next/font/google'
 
+const inter = Inter({ subsets: ['latin'] })
 
 const headingVariants = cva(
   'text-black dark:text-white text-center font-extrabold leading-tight tracking-tighter',
@@ -9,7 +11,7 @@ const headingVariants = cva(
     variants: {
       size: {
         default: 'text-4xl md:text-5xl lg:text-6xl',
-        lg: 'text-2xl md:text-5xl lg:text-5xl 2xl:text-7xl xl:text-left',
+        lg: 'text-2xl md:text-5xl lg:text-6xl 2xl:text-7xl xl:text-left',
         md: 'text-4xl md:text-4xl lg:text-4xl',
         sm: 'text-lg md:text-xl lg:text-2xl',
       },
@@ -30,7 +32,7 @@ const LargeHeading = forwardRef<HTMLHeadingElement, LargeHeadingProps> (
         <h2
           ref={ref}
           {...props}
-          className={cn(headingVariants({ size, className }))}>
+          className={cn(headingVariants({ size, className }), inter.className)}>
           {children}
         </h2>
       )
