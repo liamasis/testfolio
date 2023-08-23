@@ -3,6 +3,8 @@ import LargeHeading from '@/components/ui/LargeHeading';
 import { Github, Instagram, Link, Linkedin } from 'lucide-react';
 import useEffect from 'react'; 
 
+// DO SSR AND WORK ALL THAT STUFF OUT
+
 export default function Home() {
 
   return (
