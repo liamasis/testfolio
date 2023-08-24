@@ -12,7 +12,7 @@ const MacBox = ({ msg }) => {
             <div className="rounded-full bg-red-400 h-4 w-4 border-2 dark:border-slate-500 border-slate-800"></div>
           </div>
         </div>
-        <Paragraph className='p-2'>{msg}</Paragraph>
+        <Paragraph className='p-2'/*  dangerouslySetInnerHTML={{ __html: data }} */>{msg}</Paragraph>
       </div>
     </div>
   )
