@@ -1,7 +1,11 @@
 import React from 'react'
 import Paragraph from './Paragraph'
 
-const MacBox = ({ msg }) => {
+interface MacBoxProps {
+  msg: string,
+}
+
+const MacBox: React.FC<MacBoxProps> = ({ msg }) => {
   return (
     <div className="col-span-3 xl:col-span-1 xl:row-start-1 2xl:row-start-2 xl:row-span-1 h-full w-full flex justify-center items-center ">
       <div className="min-h-1/2 w-2/3 2xl:w-4/5 flex-col justify-center items-end border-4 border-solid rounded-lg dark:border-slate-500 border-slate-800">
@@ -12,7 +16,7 @@ const MacBox = ({ msg }) => {
             <div className="rounded-full bg-red-400 h-4 w-4 border-2 dark:border-slate-500 border-slate-800"></div>
           </div>
         </div>
-        <Paragraph className='p-2'/*  dangerouslySetInnerHTML={{ __html: data }} */>{msg}</Paragraph>
+        <Paragraph className='p-2' /*  dangerouslySetInnerHTML={{ __html: data }} */>{msg}</Paragraph>
       </div>
     </div>
   )
