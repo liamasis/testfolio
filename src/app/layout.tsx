@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 import '@/styles/globals.css'
 import { Inter, Roboto, Averia_Serif_Libre } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+
 
 const averia = Averia_Serif_Libre({
   subsets:['latin'],
