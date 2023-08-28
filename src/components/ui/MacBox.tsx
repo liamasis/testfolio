@@ -3,9 +3,19 @@ import Paragraph from './Paragraph'
 
 interface MacBoxProps {
   msg: string,
+  size: string
 }
 
-const MacBox: React.FC<MacBoxProps> = ({ msg }) => {
+const MacBox: React.FC<MacBoxProps> = ({ msg, size }) => {
+  if (size == 'large') {
+    const xlRowStart = 2
+    const xxlRowStart = 3
+    const xlRowSpan = 2
+  } else {
+    const xlRowStart = 1
+    const xxlRowStart = 2
+    const xlRowSpan = 1
+  }
   return (
     <div className="col-span-3 xl:col-span-1 xl:row-start-1 2xl:row-start-2 xl:row-span-1 h-full w-full flex justify-center items-center ">
       <div className="min-h-1/2 w-2/3 2xl:w-4/5 flex-col justify-center items-end border-4 border-solid rounded-lg dark:border-slate-500 border-slate-800">
