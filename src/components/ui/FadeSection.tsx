@@ -30,10 +30,10 @@ const FadeSection: FC<FadeSectionProps> = ({ heading, paragraph, delayTime, link
 
     return (
     <div className="grid-span-1 flex justify-center items-center">
-        <div className={`w-96 h-48 p-2 transition-opacity duration-1000 ${isLoading ? 'opacity-0' : 'opacity-100'} inline-block border border-transparent hover:outline-solid dark:shadow-stone-500 hover:shadow-lg hover:outline-4 rounded-lg`}>
+        <div className={`w-80 h-48 pt-2 ßtransition-opacity duration-1000 ${isLoading ? 'opacity-0' : 'opacity-100'} inline-block border border-transparent hover:outline-solid dark:shadow-stone-500 hover:shadow-lg hover:drop-shadow-lg rounded-lg`}>
             <LargeHeading size={'sm'} className='text-center'>{heading} </LargeHeading>
-            <Paragraph className='p-2'>{paragraph}</Paragraph>
-            <div className="w-full flex justify-center items-center font-bold dark:text-slate-100"><Link href={link}>{linkName}</Link>
+            <Paragraph className='p-2 dark:text-slate-400'>{paragraph}</Paragraph>
+            <div className="w-full flex justify-center items-center font-bold dark:text-slate-100"><Link className="border px-2 rounded dark:border-slate-800" href={link}>{linkName}</Link>
             </div>
         </div>
     </div>);
