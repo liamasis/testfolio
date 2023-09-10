@@ -22,7 +22,7 @@ export default function Home() {
           
           <MacBox msg='My name is Liam O&apos;Brien a web developer and software engineer.  ' size='small'/>
 
-          <div className="col-span-3 xl:col-span-1 xl:row-start-2 2xl:row-start-3 xl:row-span-2 h-full w-full flex justify-center items-center ">
+          <div className="col-span-3 xl:col-span-1 row-start-1 xl:row-start-2 row-span-1 2xl:row-start-3 xl:row-span-2 h-full w-full flex justify-center items-center ">
             <div className="w-5/6 min-h-5/6 flex-col justify-start items-start border-4 border-solid rounded-lg dark:border-slate-500 border-slate-800">
               <div className="h-6 border-b-4 dark:border-500 dark:border-slate-500 border-slate-800 flex flex-row-reverse gap-1 items-center justify-items-end">
                 <div className="pr-1 flex gap-1">
