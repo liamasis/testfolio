@@ -23,12 +23,12 @@ export default function Home() {
           <MacBox msg='My name is Liam O&apos;Brien a web developer and software engineer.  ' size='small'/>
 
           <div className="col-span-2 xl:col-span-1 row-start-2 row-span-2 xl:row-start-3 xl:row-span-3 h-full w-full flex justify-center items-center ">
-            <div className="w-5/6 min-h-5/6 flex-col justify-start items-start border-4 border-solid rounded-lg dark:border-slate-500 border-slate-800">
-              <div className="h-6 border-b-4 dark:border-500 dark:border-slate-500 border-slate-800 flex flex-row-reverse gap-1 items-center justify-items-end">
+            <div className="w-5/6 min-h-5/6 flex-col justify-start items-start border-2 border-solid rounded-lg dark:border-slate-500 border-slate-800">
+              <div className="h-6 border-b-2 dark:border-500 dark:border-slate-500 border-slate-800 flex flex-row-reverse gap-1 items-center justify-items-end">
                 <div className="pr-1 flex gap-1">
-                  <div className="rounded-full bg-green-400 h-4 w-4 border-2 dark:border-slate-500 border-slate-800"></div>
-                  <div className="rounded-full bg-orange-400 h-4 w-4 border-2 dark:border-slate-500 border-slate-800"></div>
-                  <div className="rounded-full bg-red-400 h-4 w-4 border-2 dark:border-slate-500 border-slate-800"></div>
+                  <div className="rounded-full bg-green-400 h-4 w-4 border-0 dark:border-slate-500 border-slate-800"></div>
+                  <div className="rounded-full bg-orange-400 h-4 w-4 border-0 dark:border-slate-500 border-slate-800"></div>
+                  <div className="rounded-full bg-red-400 h-4 w-4 border-0 dark:border-slate-500 border-slate-800"></div>
                 </div>
               </div>
               <div className="flex flex-col p-4">
