@@ -33,7 +33,7 @@ export default function Projects() {
           <FadeSection heading={'Portfolio'} paragraph={`Made in Typescript, developed with Figma, NextJS and Tailwind, and AWS Amplify for CI/CD.`} delayTime={900} link={"https://github.com/liamasis/testfolio"} linkName={"Github"} />
           <FadeSection heading={'Modal + Noughts & Crosses'} paragraph={'Using different npm packages & react developed a noughts and crosses game inside a modal.'} delayTime={1000} link={"https://github.com/liamasis/typescript-tiktak"} linkName={"Github"}/>
           <FadeSection heading={'Static Site'} paragraph={'One of my first projects was to build a static site for my friend to display her art, written with PHP & Bootstrap.'} delayTime={1200} link={"https://www.missstephanieart.com.au/"} linkName={"Live site"}/>
-          <FadeSection heading={'Art Installation'} paragraph={'Working within a large team I maintained the application developed with Python, Flask, Celery, Azure Services & Docker.'} delayTime={1300} link={"https://github.com/liamasis/scrape/"} linkName={"Github"}/>
+          <FadeSection heading={'Art Installation'} paragraph={'Working within a large team I maintained the application developed with Python, Django, Celery, Azure Services & Docker.'} delayTime={1300} link={"https://github.com/liamasis/scrape/"} linkName={"Github"}/>
           
         </div>
     </main>
