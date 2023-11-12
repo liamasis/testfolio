@@ -2,10 +2,11 @@
 
 import { FC, forwardRef, useEffect, useState } from 'react'
 
-import { VariantProps, cva } from 'class-variance-authority'
-import { cn } from '@/lib/utils';
+/* 
+TODO:
+  - If it is mobile or smaller then XL, remove the glitchy heading... made custom hook. DONE.
 
-
+*/
 interface GlitchyTextProps {
     text: string;
   }
@@ -15,7 +16,9 @@ interface GlitchyTextProps {
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     let interval: NodeJS.Timeout | null = null;
     let iteration = 0;
-
+    const isBrowser = () => typeof window !== 'undefined'; 
+    
+    
     const updateText = () => {
     setDisplayText(prevText => {
       return prevText
@@ -36,7 +39,7 @@ interface GlitchyTextProps {
       clearInterval(interval!);
     }
   };
-
+  
   const handleMouseOver = () => {
     clearInterval(interval!);
     setDisplayText(text);
@@ -50,11 +53,33 @@ interface GlitchyTextProps {
   };
 
   useEffect(() => {
+    if (typeof window !== 'undefined') {
+      // Check if window is defined (client-side rendering)
+      window.addEventListener('resize', handleWindowSizeChange);
+    }
+
     return () => {
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('resize', handleWindowSizeChange);
+      }
       clearInterval(interval!);
     };
-  }, []); 
+  }, []);
 
+  const handleWindowSizeChange = () => {
+    // Handle window size change logic here
+    const isXlScreen = window.innerWidth >= 1280; // Adjust the width threshold as per your needs
+
+    if (isXlScreen) {
+      clearInterval(interval!);
+      setDisplayText(text);
+    }
+  };
+
+  if (typeof window !== 'undefined' && window.innerWidth <= 1280) {
+    // Render plain h1 for xl screen or larger
+    return <h1>{text}</h1>;
+  }
   return (
     <h1 onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
       {displayText || text}

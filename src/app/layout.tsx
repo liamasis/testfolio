@@ -2,9 +2,14 @@ import Navbar from '@/components/Navbar';
 import Providers from '@/components/Providers';
 import { cn } from '@/lib/utils';
 import '@/styles/globals.css'
-import { Inter } from 'next/font/google'
+import { Inter, Roboto, Averia_Serif_Libre } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+
+
+const averia = Averia_Serif_Libre({
+  subsets:['latin'],
+  weight: ['400', '700']
+})
 
 export default function RootLayout({
   children,
@@ -12,18 +17,17 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return ( 
-    <html lang="en" className={cn('bg-white text-slate-900 antialiased', inter.className)}>
+    <html lang="en" className={cn('bg-white text-slate-900 antialiased', averia.className)}>
       <head>
         <title>liamo portfolio</title>
+        <link rel="icon" type="image/x-icon" href="/Favicon-LO-Grey-WhiteOutline.png" />
       </head>
-      <body className='min-h-screen bg-slate-50 dark:bg-slate-900 antialised w-full h-full justify-center'>
+      <body className='bg-slate-50 dark:bg-slate-900 antialised w-full xl:h-full justify-center'>
         <Providers>
           <Navbar></Navbar>
           {children}
         </Providers>
-
-        {/* allow for more height on mobile */}
-        <div className="h-40 md:hidden" />
+       
       </body>
     </html>
   )
