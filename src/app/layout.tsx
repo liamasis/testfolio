@@ -20,6 +20,7 @@ export default function RootLayout({
     <html lang="en" className={cn('bg-white text-slate-900 antialiased', averia.className)}>
       <head>
         <title>liamo portfolio</title>
+        <link rel="icon" type="image/x-icon" href="/Favicon-LO-Grey-WhiteOutline.png" />
       </head>
       <body className='bg-slate-50 dark:bg-slate-900 antialised w-full xl:h-full justify-center'>
         <Providers>
