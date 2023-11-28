@@ -20,7 +20,7 @@ export default function Home() {
         </div>
         <div className="col-start-1 col-span-2 xl:col-start-5 h-full w-full flex-grow items-start grid grid-rows-3 xl:grid-rows-6 2xl:grid-rows-6">
           
-          <MacBox msg='My name is Liam O&apos;Brien a web developer and software engineer.  ' size='small'/>
+          <MacBox msg='Hi i am Liam O&apos;Brien, a web developer based in Dublin, IE.  ' size='small'/>
 
           <div className="col-span-2 xl:col-span-1 row-start-2 row-span-2 xl:row-start-3 xl:row-span-3 h-full w-full flex justify-center items-center ">
             <div className="w-5/6 min-h-5/6 flex-col justify-start items-start border-2 border-solid rounded-lg dark:border-slate-500 border-slate-800">
