@@ -12,7 +12,7 @@ export default function Home() {
       <div className="bg-orange-300 mt-2 xl:mt-0 dark:bg-orange-600 rounded-full inline-flex aspect-square md:w-1/8 lg:w-2/6 xl:w-1/4 absolute w-72 opacity-90"></div>
         
       <div className="grid grid-cols-1 xl:grid-cols-6 h-full flex items-center z-50">
-        <div className="col-start-1 xl:col-start-2 xl:text-left text-center xl:col-span-3 h-72 xl:h-[calc(100vh-5rem)] flex flex-col items-center xl:items-start justify-center m-2">
+        <div className="col-start-1 xl:col-start-2 xl:text-left text-center xl:col-span-3 h-72 flex flex-col items-center xl:items-start justify-center m-2">
           <LargeHeading size={'lg'} className="py-4 2xl:py-8">Constructing Clean Code</LargeHeading>
           <LargeHeading size={'lg'} className="py-4 2xl:py-8">Creating Sleek UI</LargeHeading>
           <LargeHeading size={'lg'} className="py-4 2xl:py-8">Communicating for <br/>Improvement</LargeHeading>
@@ -33,7 +33,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col p-4">
                 <Paragraph className='text-left'>I like to build full stack applications in the Fin-Tech & Logistics 
-                industries with a Post Graduate Diploma of Computer Science from the University of Melbourne, Australia.
+                industries I have a Post Graduate Diploma of Computer Science from the University of Melbourne, Australia.
                 </Paragraph>
               </div>
             </div>
