@@ -32,7 +32,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex flex-col p-4">
-                <Paragraph className='text-left'>Looking for a position in Europe, with two years experience developing & supporting applications in the Supply Chain & Ag-tech
+                <Paragraph className='text-left'>I like to build full stack applications, with two years experience coding & supporting businesses in the Supply Chain & Finance
                 industries with a Post Graduate Diploma of Computer Science from the University of Melbourne, Australia.
                 </Paragraph>
               </div>
