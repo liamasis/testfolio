@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 const paragraphVariants = cva('max-w-prose text-black dark:text-slate-100 mb-2 text-center Inter', {
   variants: {
     size: {
-      default: 'text-base sm:text-lg md:text-[22px] 2xl:text-[22px]',
+      default: 'text-base lg:text-lg',
       sm: 'text-sm, sm:text-base',
     },
   },

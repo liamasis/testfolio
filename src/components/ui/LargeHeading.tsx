@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 const headingVariants = cva(
-  'text-black dark:text-white text-center font-extrabold leading-tight tracking-tighter',
+  'text-black dark:text-white leading-3 text-center font-extrabold leading-tight tracking-tighter',
   {
     variants: {
       size: {
